@@ -1,0 +1,36 @@
+{
+  "DATA_SET_NAMES": [
+	"ml-100k"
+  ],
+  "RECOMMENDERS": [
+    "implicit-mf",
+    "user-knn",
+    "item-knn",
+    "alternating-least-squares",
+    "bayesian-personalized-ranking",
+    "logistic-mf",
+    "item-item-cosine",
+    "item-item-tfidf",
+    "item-item-bm25",
+    "popularity"
+  ],
+  "METRICS": [
+    "ndcg"
+  ],
+  "NUM_FOLDS": 5,
+  "TOPN_SCORE": [
+    5,
+    10,
+    15,
+    25,
+    50,
+    75,
+    100,
+    125,
+    150
+  ],
+  "OPTIMIZATION_TOPN_SCORE": 10,
+  "HPO_TIME_LIMIT": 120,
+  "TOPN_SAMPLE": 10,
+  "NUM_BATCHES": 10
+}
