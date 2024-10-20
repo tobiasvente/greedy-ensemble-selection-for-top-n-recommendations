@@ -62,6 +62,9 @@ The stages are as follows:
     <li>Data splitting. The data is split into folds for cross-validation. Splitting is performed per user to avoid user cold start.</li>
     <li>Recommender fitting. The recommenders are fitted on the training data.</li>
     <li>Recommender predicting. The fitted recommenders predict a ranked list for each user.</li>
+	<li>Aggregate predictions. The prediction process is parallelized. Therefore, all predictions need to be aggregated.</li>
+	<li>Create prediction matrix. Combine all model predictions into one matrix.</li>
+	<li>Execute Ensembling. Run greedy ensemble selection.</li>
 </ol>
 
 ###  Local execution
